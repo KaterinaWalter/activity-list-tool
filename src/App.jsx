@@ -91,7 +91,7 @@ export default function App() {
   // ---- Toolbar label / button text ----
   const toolbarInfo =
     filledCount === 0
-      ? 'No activities yet — fill at least one slot to enable export.'
+      ? 'Fill at least one activity slot to enable copy & paste export.'
       : `${filledCount} ${
           filledCount === 1 ? 'activity' : 'activities'
         } ready to copy.`;
@@ -156,9 +156,9 @@ export default function App() {
               </div>
 
               <p className="tab-intro">
-                Each slot has hard limits: <strong>50</strong> chars for
+                <span class="field-label">Character Count Limits:</span> <strong>50</strong> for
                 Position, <strong>100</strong> for Organization,{' '}
-                <strong>150</strong> for Details. Use fragments, not sentences.
+                <strong>150</strong> for Details.<br></br> Use fragments, not sentences.
                 Lead with a verb. Quantify when you can.
               </p>
 

@@ -67,7 +67,7 @@ export default function ActivityCard({
       {expanded && (
         <div className="card-body">
           <div className="field">
-            <label className="field-label">Position / Leadership</label>
+            <label className="field-label">Position</label>
             <input
               type="text"
               className="field-input"
@@ -113,6 +113,7 @@ export default function ActivityCard({
             />
           </div>
 
+          <span class="field-label">SUGGESTIONS</span>
           <FeedbackPanel
             description={activity.description}
             onApplyAbbrev={handleApplyAbbrev}

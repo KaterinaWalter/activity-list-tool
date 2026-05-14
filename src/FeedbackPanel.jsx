@@ -24,8 +24,7 @@ export default function FeedbackPanel({ description, onApplyAbbrev }) {
   if (!description.trim()) {
     return (
       <div className="feedback empty-feedback">
-        Start writing above. We'll flag weak phrasing, "I" subjects, and
-        abbreviations that buy you characters.
+        Start writing above & suggestions for improvement will be flagged here.
       </div>
     );
   }
@@ -40,7 +39,7 @@ export default function FeedbackPanel({ description, onApplyAbbrev }) {
     <div className="feedback">
       {weaks.length > 0 && (
         <div className="fb-section">
-          <div className="fb-title">Weak phrasing</div>
+          <div className="fb-title">Weak Phrasing</div>
           {weaks.map((w, i) => (
             <div key={i} className="fb-item">
               <span className="fb-flag">
@@ -73,7 +72,7 @@ export default function FeedbackPanel({ description, onApplyAbbrev }) {
 
       {isTight && abbrevs.length > 0 && (
         <div className="fb-section">
-          <div className="fb-title">Buy back characters</div>
+          <div className="fb-title">Buy Back Characters</div>
           {abbrevs.slice(0, 4).map((a, i) => (
             <div key={i} className="fb-item">
               <span className="fb-flag">
@@ -97,7 +96,7 @@ export default function FeedbackPanel({ description, onApplyAbbrev }) {
       {cleanRead && (
         <div className="fb-section">
           <div className="fb-positive">
-            Reads clean. Lead with action verbs and quantify when you can.
+            Reads clean! Remember to lead with action verbs & quantify when you can.
           </div>
         </div>
       )}
