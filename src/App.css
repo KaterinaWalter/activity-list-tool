@@ -578,9 +578,9 @@
   font-size: 0.78rem;
   color: var(--ink-soft);
   line-height: 1.6;
-  max-width: 70ch;
+  text-align: center;
 }
-.footer code {
+.footer a {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.85em;
   background: var(--paper-2);

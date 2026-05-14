@@ -183,9 +183,7 @@ export default function App() {
         </main>
 
         <footer className="footer">
-          Work autosaves locally. Storage auto-detects the environment —
-          uses <code>window.storage</code> in Claude artifacts and{' '}
-          <code>localStorage</code> everywhere else.
+          Coded by <a href="https://coderina.dev">Katerina Walter</a>
         </footer>
       </div>
     </div>
