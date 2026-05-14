@@ -110,7 +110,7 @@ export default function App() {
           <div className="title-row">
             <div>
               <h1 className="title">Ten Slots</h1>
-              <p className="subtitle">Common App activities · writing tool</p>
+              <p className="subtitle">Common App activities list tool</p>
             </div>
             <div className="status">
               <span className="status-num">{filledCount}</span>
@@ -122,13 +122,13 @@ export default function App() {
               className={`tab ${tab === 'edit' ? 'tab-active' : ''}`}
               onClick={() => setTab('edit')}
             >
-              Editor
+              ✏️ EDITOR
             </button>
             <button
               className={`tab ${tab === 'brainstorm' ? 'tab-active' : ''}`}
               onClick={() => setTab('brainstorm')}
             >
-              Brainstorm
+              🧠 BRAINSTORM
               {notes.length > 0 && (
                 <span className="tab-badge">{notes.length}</span>
               )}
