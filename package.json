@@ -16,7 +16,7 @@
     "@adobe/css-tools": "^4.3.1",
     "postcss": "^8.4.31"
   },
-"homepage": "https://KaterinaWalter.github.io/activity-list-tool",
+"homepage": "https://KaterinaWalter.github.io/activities-tool",
 "scripts": {
   "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
   "build": "vite build",
