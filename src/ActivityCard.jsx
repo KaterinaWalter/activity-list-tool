@@ -104,7 +104,7 @@ export default function ActivityCard({
               maxLength={LIMITS.description}
               value={activity.description}
               onChange={(e) => onChange('description', e.target.value)}
-              placeholder="Describe your IMPACT: What you did, what you led, what you produced, what changed. Fragments > sentences."
+              placeholder="IMPACT: What you did, what you led, what you produced, what changed..."
               rows={3}
             />
             <CharBar
