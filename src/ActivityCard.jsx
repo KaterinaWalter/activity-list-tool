@@ -87,7 +87,7 @@ export default function ActivityCard({
               maxLength={LIMITS.organization}
               value={activity.organization}
               onChange={(e) => onChange('organization', e.target.value)}
-              placeholder="Name of the team, club, business, project…"
+              placeholder="Name of the team, club, business, project..."
             />
             <CharBar
               count={activity.organization.length}
@@ -104,7 +104,7 @@ export default function ActivityCard({
               maxLength={LIMITS.description}
               value={activity.description}
               onChange={(e) => onChange('description', e.target.value)}
-              placeholder="What you did, what you led, what you produced, what changed. Fragments > sentences."
+              placeholder="Describe your IMPACT: What you did, what you led, what you produced, what changed. Fragments > sentences."
               rows={3}
             />
             <CharBar

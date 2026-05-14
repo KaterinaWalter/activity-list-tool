@@ -28,6 +28,9 @@
   padding: 1.5rem 1rem 3rem;
 }
 .container { max-width: 860px; margin: 0 auto; }
+.bold {
+  font-weight: bold;
+}
 
 /* ----- Header ----- */
 .header { margin-bottom: 1rem; }

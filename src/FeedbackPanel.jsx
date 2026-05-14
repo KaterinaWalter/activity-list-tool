@@ -96,7 +96,7 @@ export default function FeedbackPanel({ description, onApplyAbbrev }) {
       {cleanRead && (
         <div className="fb-section">
           <div className="fb-positive">
-            Reads clean! Remember to lead with action verbs & quantify when you can.
+            Reads clean! Remember to lead with <span class="bold">action verbs</span> & <span class="bold">quantify</span> when you can.
           </div>
         </div>
       )}

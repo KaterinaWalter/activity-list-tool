@@ -110,7 +110,7 @@ export default function App() {
           <div className="title-row">
             <div>
               <h1 className="title">Ten Slots</h1>
-              <p className="subtitle">Common App activities list tool</p>
+              <p className="subtitle">Common App Activities List • Writing Tool</p>
             </div>
             <div className="status">
               <span className="status-num">{filledCount}</span>
@@ -138,7 +138,7 @@ export default function App() {
 
         <main>
           {!loaded ? (
-            <div className="loading">Loading saved work…</div>
+            <div className="loading">Loading saved work...</div>
           ) : tab === 'edit' ? (
             <>
               {/* Copy-All toolbar — pinned at the top of the editor tab */}
@@ -156,10 +156,10 @@ export default function App() {
               </div>
 
               <p className="tab-intro">
-                <span class="field-label">Character Count Limits:</span> <strong>50</strong> for
+                <span class="bold">Character Count Limits:</span> <strong>50</strong> for
                 Position, <strong>100</strong> for Organization,{' '}
-                <strong>150</strong> for Details.<br></br> Use fragments, not sentences.
-                Lead with a verb. Quantify when you can.
+                <strong>150</strong> for Details.<br></br> Use <span class="bold">fragments</span>, not sentences.
+                Lead with a <span class="bold">verb</span>. <span class="bold">Quantify</span> when you can.
               </p>
 
               {activities.map((a, i) => (
