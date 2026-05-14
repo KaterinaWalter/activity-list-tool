@@ -56,7 +56,7 @@ export const ABBREVS = [
 // Power verb reference, grouped by theme
 export const POWER_VERB_GROUPS = [
   { theme: 'Lead',     verbs: ['Led', 'Directed', 'Spearheaded', 'Chaired', 'Headed'] },
-  { theme: 'Start',    verbs: ['Founded', 'Launched', 'Established', 'Initiated', 'Co-founded'] },
+  { theme: 'Start',    verbs: ['Founded', 'Launched', 'Established', 'Initiated'] },
   { theme: 'Build',    verbs: ['Developed', 'Built', 'Designed', 'Engineered', 'Produced'] },
   { theme: 'Teach',    verbs: ['Taught', 'Mentored', 'Tutored', 'Trained', 'Coached'] },
   { theme: 'Organize', verbs: ['Organized', 'Coordinated', 'Managed', 'Oversaw', 'Hosted'] },
