@@ -147,6 +147,14 @@ export default function App() {
             <div className="loading">Loading saved work...</div>
           ) : tab === 'edit' ? (
             <>
+
+              <p className="tab-intro">
+                <span className="bold">Character Count Limits:</span> <strong>50</strong> for
+                Position, <strong>100</strong> for Organization, <strong>150</strong> for Details.
+                <br/>
+                <span className="bold">Tips:</span> Lead with a <em>verb</em>. Use <em>fragments</em>, not sentences. <em>Quantify</em> when you can.
+              </p>
+
               {/* Copy-All toolbar — pinned at the top of the editor tab */}
               <div className="toolbar">
                 <div className="toolbar-info">{toolbarInfo}</div>
@@ -160,13 +168,6 @@ export default function App() {
                   {copyAllBtnText}
                 </button>
               </div>
-
-              <p className="tab-intro">
-                <span className="bold">Character Count Limits:</span> <strong>50</strong> for
-                Position, <strong>100</strong> for Organization,{' '}
-                <strong>150</strong> for Details.<br></br> Use <span className="bold">fragments</span>, not sentences.
-                Lead with a <span className="bold">verb</span>. <span className="bold">Quantify</span> when you can.
-              </p>
 
               {activities.map((a, i) => (
                 <ActivityCard

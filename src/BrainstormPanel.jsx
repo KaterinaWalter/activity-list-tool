@@ -35,10 +35,8 @@ export default function BrainstormPanel({ notes, onAddNote, onDeleteNote }) {
   return (
     <div className="brainstorm">
       <p className="brain-intro">
-        <em>Stuck?</em> Click any prompt that sparks something. Students often forget
-        their most differentiating activities: caregiving, side gigs, online
-        communities, self-taught skills. Jot a note now, build it into a real
-        activity slot later.
+        <span className="bold">Stuck?</span> Click any prompt that sparks something.
+        <br/>Jot a quick note now, build it into a real activity slot later.
       </p>
 
       <div className="prompt-grid">

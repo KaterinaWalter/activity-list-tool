@@ -9,7 +9,7 @@
   --ink-faint: #A39479;
   --rule: #D8CDB6;
   --rule-soft: #E8DFCA;
-  --accent: #A6431F;
+  --accent: #a61f87;
   --accent-soft: #D8714B;
   --accent-bg: #F9E8DE;
   --success: #4A6741;
@@ -116,12 +116,12 @@
   font-size: 0.9rem;
   color: var(--ink-soft);
   font-family: 'DM Sans', sans-serif;
-  flex: 1 1 240px;
+  flex: 1 1 0px;
   min-width: 0;
 }
 .copy-all-btn {
   flex-shrink: 0;
-  min-width: 200px;
+  min-width: 150px;
   text-align: center;
 }
 .copy-all-btn.copy-success {
