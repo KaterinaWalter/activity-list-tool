@@ -8,17 +8,49 @@ export const NUM_SLOTS = 10;
 
 // Weak phrase patterns with stronger alternatives
 export const WEAK_PATTERNS = [
-  { match: /\bparticipated in\b/gi, label: 'participated in', suggestions: ['led', 'organized', 'coordinated', 'contributed to', 'drove'] },
-  { match: /\b(?:was|am) (?:a |an )?member(?: of)?\b/gi, label: 'was a member of', suggestions: ['serve as', 'contribute to', 'collaborate with', 'engage with'] },
-  { match: /\bwas (?:a |an )?part of\b/gi, label: 'was part of', suggestions: ['serve in', 'contribute to', 'collaborate with'] },
+  // participate
+  { match: /\bparticipated in\b/gi, label: 'participated in', suggestions: ['led', 'organized', 'coordinated', 'drove'] },
+  { match: /\bparticipat(?:e|es|ing) in\b/gi, label: 'participate in', suggestions: ['lead', 'organize', 'coordinate', 'drive'] },
+
+  // member of
+  { match: /\bwas (?:a |an )?member(?: of)?\b/gi, label: 'was a member of', suggestions: ['served as', 'contributed to', 'collaborated with', 'engaged with'] },
+  { match: /\b(?:am|is|are) (?:a |an )?member(?: of)?\b/gi, label: 'am a member of', suggestions: ['serve as', 'contribute to', 'collaborate with', 'engage with'] },
+
+  // part of
+  { match: /\bwas (?:a |an )?part of\b/gi, label: 'was part of', suggestions: ['served in', 'contributed to', 'collaborated with'] },
+  { match: /\b(?:am|is|are) (?:a |an )?part of\b/gi, label: 'am part of', suggestions: ['serve in', 'contribute to', 'collaborate with'] },
+
+  // help
   { match: /\bhelped (?:to |with )?/gi, label: 'helped (with/to)', suggestions: ['coordinated', 'facilitated', 'supported', 'drove'] },
+  { match: /\bhelp(?:s|ing)? (?:to |with )?/gi, label: 'help (with/to)', suggestions: ['coordinate', 'facilitate', 'support', 'drive'] },
+
+  // work
   { match: /\bworked (?:on|with)\b/gi, label: 'worked on/with', suggestions: ['developed', 'built', 'designed', 'spearheaded', 'produced'] },
-  { match: /\binvolved (?:in|with)\b/gi, label: 'involved in/with', suggestions: ['led', 'drove', 'engaged in', 'contributed to'] },
+  { match: /\bwork(?:s|ing)? (?:on|with)\b/gi, label: 'work on/with', suggestions: ['develop', 'build', 'design', 'spearhead', 'produce'] },
+
+  // involved
+  { match: /\bwas involved (?:in|with)\b/gi, label: 'was involved in/with', suggestions: ['led', 'drove', 'engaged in', 'contributed to'] },
+  { match: /\b(?:am|is|are) involved (?:in|with)\b/gi, label: 'am involved in/with', suggestions: ['lead', 'drive', 'engage in', 'contribute to'] },
+
+  // take part
   { match: /\btook part in\b/gi, label: 'took part in', suggestions: ['led', 'contributed to', 'competed in', 'performed in'] },
-  { match: /\bresponsible for\b/gi, label: 'responsible for', suggestions: ['managed', 'oversaw', 'directed', 'led'] },
+  { match: /\btak(?:e|es|ing) part in\b/gi, label: 'take part in', suggestions: ['lead', 'contribute to', 'compete in', 'perform in'] },
+
+  // responsible
+  { match: /\bwas responsible for\b/gi, label: 'was responsible for', suggestions: ['managed', 'oversaw', 'directed', 'led'] },
+  { match: /\b(?:am|is|are) responsible for\b/gi, label: 'am responsible for', suggestions: ['manage', 'oversee', 'direct', 'lead'] },
+
+  // assist
   { match: /\bassisted (?:in|with)?/gi, label: 'assisted', suggestions: ['supported', 'partnered with', 'collaborated with'] },
+  { match: /\bassist(?:s|ing)? (?:in|with)?/gi, label: 'assist', suggestions: ['support', 'partner with', 'collaborate with'] },
+
+  // join
   { match: /\bjoined\b/gi, label: 'joined', suggestions: ['founded', 'launched', 'served on'] },
+  { match: /\bjoin(?:s|ing)?\b/gi, label: 'join', suggestions: ['establish', 'launch', 'serve on'] },
+
+  // attend
   { match: /\battended\b/gi, label: 'attended', suggestions: ['completed', 'trained at', 'studied at'] },
+  { match: /\battend(?:s|ing)?\b/gi, label: 'attend', suggestions: ['train at', 'study at', 'enroll in'] },
 ];
 
 // Match "I" as a standalone pronoun (subject usage)
@@ -34,18 +66,11 @@ export const ABBREVS = [
   { match: /\borganization(?:s)?\b/gi, replace: 'org' },
   { match: /\bdepartment(?:s)?\b/gi, replace: 'dept' },
   { match: /\bvice president\b/gi, replace: 'VP' },
-  { match: /\bpresident\b/gi, replace: 'Pres' },
   { match: /\bnational\b/gi, replace: "nat'l" },
   { match: /\binternational\b/gi, replace: "int'l" },
   { match: /\bmanagement\b/gi, replace: 'mgmt' },
-  { match: /\btournament\b/gi, replace: 'tourney' },
-  { match: /\bchampionship\b/gi, replace: 'champ' },
-  { match: /\bcompetition(?:s)?\b/gi, replace: 'comp' },
-  { match: /\bcommunity\b/gi, replace: 'comm' },
-  { match: /\bvolunteer(?:ed)?\b/gi, replace: 'vol' },
+  { match: /\bgovernment\b/gi, replace: 'govt' },
   { match: /\bhours\b/gi, replace: 'hrs' },
-  { match: /\bmembers\b/gi, replace: 'mbrs' },
-  { match: /\bstudents\b/gi, replace: 'stu' },
   { match: /\bpercent\b/gi, replace: '%' },
   { match: /\bnumber(?:s)?\b/gi, replace: '#' },
   { match: /\bfirst\b/gi, replace: '1st' },

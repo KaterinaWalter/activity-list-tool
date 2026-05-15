@@ -9,14 +9,14 @@
   --ink-faint: #A39479;
   --rule: #D8CDB6;
   --rule-soft: #E8DFCA;
-  --accent: #8C5383;
-  --accent-soft: #a3729c;
-  --accent-bg: #F9E8DE;
-  --success: #2a9d8f;
-  --success-bg: #E4ECDE;
-  --warn: #B8842B;
-  --danger: #92374D;
-  --danger-bg: #F9DDE4;
+  --accent: #543e71;
+  --accent-soft: #817196;
+  --accent-bg: #ded4eb;
+  --success: #218380;
+  --success-bg: #d8eceb;
+  --warn: #caa35a;
+  --danger: #8f2d56;
+  --danger-bg: #f7d4e3;
 }
 
 * { box-sizing: border-box; }

@@ -64,7 +64,7 @@ export default function FeedbackPanel({ description, onApplyAbbrev }) {
             </span>
             <span className="fb-arrow">→</span>
             <span className="fb-suggestions">
-              Drop the subject. Lead with a verb: "Led" not "I led".
+              Drop the subject & lead with a verb: "Captained" not "I was the captain"
             </span>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function FeedbackPanel({ description, onApplyAbbrev }) {
       {cleanRead && (
         <div className="fb-section">
           <div className="fb-positive">
-            Reads clean! Remember to lead with <span class="bold">action verbs</span> & <span class="bold">quantify</span> when you can.
+            Remember to lead with strong <span class="bold">power verbs</span> & <span class="bold">quantify</span> when you can.
           </div>
         </div>
       )}
