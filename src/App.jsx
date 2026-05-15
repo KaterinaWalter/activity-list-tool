@@ -11,6 +11,7 @@ import { storage } from './storage';
 
 import ActivityCard from './ActivityCard';
 import BrainstormPanel from './BrainstormPanel';
+import ExamplesPanel from './ExamplesPanel';
 
 export default function App() {
   const [tab, setTab] = useState('edit');
@@ -180,12 +181,14 @@ export default function App() {
                 />
               ))}
             </>
-          ) : (
+          ) : tab === 'brainstorm' ? (
             <BrainstormPanel
               notes={notes}
               onAddNote={addNote}
               onDeleteNote={deleteNote}
             />
+          ) : (
+            <ExamplesPanel />
           )}
         </main>
 

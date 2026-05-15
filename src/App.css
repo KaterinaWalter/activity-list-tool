@@ -573,6 +573,84 @@
 }
 .note-del:hover { color: var(--danger); }
 
+/* ----- Examples ----- */
+.examples { margin-top: 1.25rem; }
+.examples-intro {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  max-width: 70ch;
+  line-height: 1.55;
+  margin: 0 0 1.2rem;
+}
+.examples-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.example-row {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.85rem 0.95rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem;
+  align-items: start;
+}
+.example-row-num {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--accent);
+  line-height: 1;
+  padding-top: 0.3rem;
+}
+.example-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+.example-cell {
+  border: 1px solid var(--rule-soft);
+  border-radius: 3px;
+  padding: 0.7rem 0.75rem;
+}
+.example-before {
+  background: #fbf1ec;
+  border-color: #e6c5b8;
+}
+.example-after {
+  background: #edf4e9;
+  border-color: #cbdcbf;
+}
+.example-cell-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+.example-before .example-cell-title { color: var(--danger); }
+.example-after .example-cell-title { color: var(--success); }
+.example-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.example-line {
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.45;
+}
+.example-key {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-right: 0.35rem;
+}
+
 /* ----- Footer ----- */
 .footer {
   margin-top: 3rem;
@@ -598,6 +676,9 @@
   .title-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
   .status { text-align: left; }
   .prompt-grid { grid-template-columns: 1fr; }
+  .example-row { grid-template-columns: 1fr; gap: 0.55rem; }
+  .example-grid { grid-template-columns: 1fr; }
+  .example-row-num { padding-top: 0; }
   .toolbar { flex-direction: column; align-items: stretch; }
   .copy-all-btn { width: 100%; }
 }
