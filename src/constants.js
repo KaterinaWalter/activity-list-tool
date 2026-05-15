@@ -70,20 +70,25 @@ export const POWER_VERB_GROUPS = [
 export const BRAINSTORM_PROMPTS = [
   { q: 'Started anything: a club, business, community service, newsletter?', tag: 'Founder' },
   { q: 'Organized an event, fundraiser, gathering, or drive?', tag: 'Organizing' },
-  { q: 'Train or compete in any sport, even casually or outside school?', tag: 'Athletics' },
-  { q: 'Compete in non-sports: Robotics, Model UN, debate, chess, hackathons, esports, math?', tag: 'Competition' },
-  { q: 'Tutor, mentor, or coach anyone: paid, unpaid, formal, or not?', tag: 'Teaching' },
   { q: 'Volunteer consistently somewhere, beyond required service hours?', tag: 'Service' },
+
+  { q: 'Train or compete in any sport, even casually or outside school?', tag: 'Athletics' },
+  { q: 'Compete in non-sports: Robotics, Model UN, Debate?', tag: 'Competition' },
   { q: 'Part of a cultural group, heritage org, or language school?', tag: 'Culture' },
-  { q: 'Held a paid job: even informal (babysitting, lawn care, retail)?', tag: 'Work' },
+  
+  { q: 'Held an internship or paid job: even informal (babysitting, retail)?', tag: 'Work' },
   { q: 'Freelance: tutoring, coding, design, photography, lessons?', tag: 'Work' },
-  { q: 'Active in a religious community: service, choir, youth group?', tag: 'Faith' },
+  { q: 'Tutor, mentor, or coach anyone: paid, unpaid, formal, or not?', tag: 'Teaching' },
+
   { q: 'Write, draw, compose, film, or design regularly outside class?', tag: 'Creative' },
   { q: 'Published or shared creative work anywhere (zines, blogs, YouTube)?', tag: 'Creative' },
   { q: 'Perform: music, theatre, dance, comedy, slam poetry?', tag: 'Creative' },
+
   { q: "Taught yourself a skill you've kept up for over a year?", tag: 'Self-taught' },
   { q: 'Contribute to an online forum, wiki, or open-source project?', tag: 'Online' },
   { q: 'Run an account, channel, podcast, or blog with consistent output?', tag: 'Online' },
+
+  { q: 'Active in a religious community: service, choir, youth group?', tag: 'Faith' },
   { q: 'Do you regularly care for younger siblings or relatives?', tag: 'Family' },
   { q: 'Do you translate, interpret, or handle paperwork for your family?', tag: 'Family' },
 ];

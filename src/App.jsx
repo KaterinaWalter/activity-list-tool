@@ -133,6 +133,12 @@ export default function App() {
                 <span className="tab-badge">{notes.length}</span>
               )}
             </button>
+            <button
+              className={`tab ${tab === 'examples' ? 'tab-active' : ''}`}
+              onClick={() => setTab('examples')}
+            >
+              💡 EXAMPLES
+            </button>
           </nav>
         </header>
 
@@ -156,10 +162,10 @@ export default function App() {
               </div>
 
               <p className="tab-intro">
-                <span class="bold">Character Count Limits:</span> <strong>50</strong> for
+                <span className="bold">Character Count Limits:</span> <strong>50</strong> for
                 Position, <strong>100</strong> for Organization,{' '}
-                <strong>150</strong> for Details.<br></br> Use <span class="bold">fragments</span>, not sentences.
-                Lead with a <span class="bold">verb</span>. <span class="bold">Quantify</span> when you can.
+                <strong>150</strong> for Details.<br></br> Use <span className="bold">fragments</span>, not sentences.
+                Lead with a <span className="bold">verb</span>. <span className="bold">Quantify</span> when you can.
               </p>
 
               {activities.map((a, i) => (
@@ -183,7 +189,8 @@ export default function App() {
         </main>
 
         <footer className="footer">
-          Coded by <a href="https://coderina.dev">Katerina Walter</a>
+          <p>Coded by <a href="https://coderina.dev">Katerina Walter</a></p>
+          <p>for College Counseling @ <a href="https://bwl.org">BWL</a></p>
         </footer>
       </div>
     </div>

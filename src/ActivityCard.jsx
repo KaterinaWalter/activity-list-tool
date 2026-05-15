@@ -74,7 +74,7 @@ export default function ActivityCard({
               maxLength={LIMITS.position}
               value={activity.position}
               onChange={(e) => onChange('position', e.target.value)}
-              placeholder="e.g. Co-Captain · Founder · Treasurer"
+              placeholder="e.g. Captain • Founder • Treasurer • Intern"
             />
             <CharBar count={activity.position.length} limit={LIMITS.position} />
           </div>
@@ -104,7 +104,7 @@ export default function ActivityCard({
               maxLength={LIMITS.description}
               value={activity.description}
               onChange={(e) => onChange('description', e.target.value)}
-              placeholder="IMPACT: What you did, what you led, what you produced, what changed..."
+              placeholder="IMPACT: Describe what you did, what you led, what you produced, what changed..."
               rows={3}
             />
             <CharBar
