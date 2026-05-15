@@ -4,66 +4,45 @@ const EXAMPLES = [
   {
     id: 1,
     before: {
-      position: 'Member',
-      organization: 'Science Olympiad club',
-      details: 'Participated in competitions and helped with projects.',
+      position: 'Debate Team Captain',
+      details: "I am the captain of our school's debate team. I run our practices each week, give feedback to teammates, and represent the team at tournaments.",
     },
     after: {
-      position: 'Build Captain',
-      organization: 'Science Olympiad Team',
-      details: 'Built 3 event devices; coached 8 rookies; team placed 2nd at regionals.',
+      position: 'Captain, Varsity Debate Team | 3 yrs varsity',
+      details: "Recruited 12 new debaters; coached team to 1st state-tournament finish in 5 yrs; mentored 6 younger teammates onto varsity.",
     },
   },
   {
     id: 2,
     before: {
-      position: 'Volunteer',
-      organization: 'Local hospital',
-      details: 'Helped nurses and patients every weekend.',
+      position: 'Volunteer Tutor',
+      details: "I tutor elementary school kids in math and reading after school once a week at the local community center.",
     },
     after: {
-      position: 'Pediatric Unit Volunteer',
-      organization: 'St. Mary Medical Center',
-      details: 'Logged 120 hrs; ran reading cart for 25+ patients/week; translated Spanish intake forms.',
+      position: 'Volunteer Math & Literacy Tutor, Boys & Girls Club',
+      details: "Tutored 5 K-3 students weekly; designed game-based lessons that helped 4 advance a full reading level by spring.",
     },
   },
   {
     id: 3,
     before: {
-      position: 'Tutor',
-      organization: 'My school',
-      details: 'Tutored students in math after class.',
+      position: 'Soccer Player',
+      details: "I play varsity soccer at my school. We practice every day after school and have games on weekends. I love being part of the team.",
     },
     after: {
-      position: 'Founder, Peer Math Lab',
-      organization: 'Lincoln High School',
-      details: 'Recruited 14 tutors, launched drop-in center, raised Algebra pass rate from 71% to 84%.',
+      position: 'Captain & Center Midfielder, Varsity Girls Soccer',
+      details: "Led 22-player team to first league title in 6 yrs. Ran preseason fitness program; organized fundraiser raising $1,800 for new uniforms.",
     },
   },
   {
     id: 4,
     before: {
-      position: 'Intern',
-      organization: 'Tech startup',
-      details: 'Worked on coding tasks and attended meetings.',
+      position: 'Started a Podcast',
+      details: "I started a podcast about books with my friend. We record episodes about novels we read together and post them online for fun.",
     },
     after: {
-      position: 'Software Engineering Intern',
-      organization: 'BrightPath Analytics',
-      details: 'Shipped React dashboard module; cut report load time 40%; presented sprint demo to 12-person team.',
-    },
-  },
-  {
-    id: 5,
-    before: {
-      position: 'Player',
-      organization: 'Varsity soccer',
-      details: 'Went to practice and played in games.',
-    },
-    after: {
-      position: 'Captain, Varsity Soccer',
-      organization: 'Roosevelt HS Athletics',
-      details: 'Led daily drills, mentored 9 underclassmen, and helped program reach first district final in 11 years.',
+      position: 'Founder & Co-Host, "Page Turners" YA Book Podcast',
+      details: "Launched weekly podcast on YA fiction; produced 24 episodes reaching 3,400+ listeners across 18 countries on Spotify & Apple.",
     },
   },
 ];
@@ -75,9 +54,6 @@ function ExampleEntry({ label, entry, tone }) {
       <div className="example-lines">
         <div className="example-line">
           <span className="example-key">Position:</span> {entry.position}
-        </div>
-        <div className="example-line">
-          <span className="example-key">Organization:</span> {entry.organization}
         </div>
         <div className="example-line">
           <span className="example-key">Details:</span> {entry.details}
