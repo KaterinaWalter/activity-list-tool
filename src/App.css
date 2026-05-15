@@ -9,13 +9,14 @@
   --ink-faint: #A39479;
   --rule: #D8CDB6;
   --rule-soft: #E8DFCA;
-  --accent: #a61f87;
-  --accent-soft: #D8714B;
+  --accent: #8C5383;
+  --accent-soft: #a3729c;
   --accent-bg: #F9E8DE;
-  --success: #4A6741;
+  --success: #2a9d8f;
   --success-bg: #E4ECDE;
   --warn: #B8842B;
-  --danger: #A6431F;
+  --danger: #92374D;
+  --danger-bg: #F9DDE4;
 }
 
 * { box-sizing: border-box; }
@@ -616,12 +617,12 @@
   padding: 0.7rem 0.75rem;
 }
 .example-before {
-  background: #fbf1ec;
-  border-color: #e6c5b8;
+  background: var(--danger-bg);
+  border-color: var(--danger);
 }
 .example-after {
-  background: #edf4e9;
-  border-color: #cbdcbf;
+  background: var(--success-bg);
+  border-color: var(--success);
 }
 .example-cell-title {
   font-family: 'JetBrains Mono', monospace;
